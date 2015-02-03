@@ -2,7 +2,7 @@
 :lang :beja-arteiga
 :sgpref "bar"
 :schemata {
-           :case [:Ablative, :Equative, :Locative, :Nom_obj, :Nominative, :Object, :Possessive]
+           :case [:Ablative, :Equative, :Locative, :Nom_obj, :Subject, :Object, :Possessive]
            :conjClass [:Prefix, :Suffix]
            :conjType [:Irregular]
            :defClass [:DefClass1, :DefClass2, :DefClass3]
@@ -1115,13 +1115,13 @@
 	    [:Nom_obj, :DefClass2, :Fem, :Singular, "ti-"],
 	    [:Nom_obj, :DefClass2, :Masc, :Plural, "yi-"],
 	    [:Nom_obj, :DefClass2, :Masc, :Singular, "wi-"],
-	    [:Nominative, :DefClass1, :Masc, :Plural, "?aa-"],
+	    [:Subject, :DefClass1, :Masc, :Plural, "?aa-"],
 	    [:Nom_obj, :DefClass3, :Masc, :Singular, "?i-"],
-	    [:Nominative, :DefClass1, :Fem, :Plural, "taa-"],
+	    [:Subject, :DefClass1, :Fem, :Plural, "taa-"],
 	    [:Object, :DefClass1, :Masc, :Singular, "?oo-"],
 	    [:Object, :DefClass1, :Fem, :Singular, "too-"],
-	    [:Nominative, :DefClass1, :Masc, :Singular, "?uu-"],
-	    [:Nominative, :DefClass1, :Fem, :Singular, "tuu-"]]
+	    [:Subject, :DefClass1, :Masc, :Singular, "?uu-"],
+	    [:Subject, :DefClass1, :Fem, :Singular, "tuu-"]]
     }
     {:label "beja_H-NPluralFormation"
     :common {:morphClass :PLMARK,
@@ -1172,44 +1172,44 @@
 	    [:Object, :Common, :Plural, :Person1, "hinìn"],
 	    [:Object, :Masc, :Singular, :Person2, "bar-oó-k"],
 	    [:Object, :Fem, :Singular, :Person2, "ba[r]-t-oó-k"],
-	    [:Nominative, :Masc, :Singular, :Person3, "bar-uú"],
-	    [:Nominative, :Masc, :Singular, :Person2, "bar-uú-k"],
+	    [:Subject, :Masc, :Singular, :Person3, "bar-uú"],
+	    [:Subject, :Masc, :Singular, :Person2, "bar-uú-k"],
 	    [:Object, :Fem, :Singular, :Person3, "ba[r]-t-oó"],
-	    [:Nominative, :Masc, :Plural, :Person2, "bar-aá-k"],
-	    [:Nominative, :Fem, :Plural, :Person3, "ba[r]-t-aá"],
+	    [:Subject, :Masc, :Plural, :Person2, "bar-aá-k"],
+	    [:Subject, :Fem, :Plural, :Person3, "ba[r]-t-aá"],
 	    [:Object, :Fem, :Plural, :Person3, "ba[r]-t-eé"],
 	    [:Object, :Masc, :Plural, :Person2, "bar-eé-k"],
-	    [:Nominative, :Masc, :Plural, :Person3, "bar-aá"],
-	    [:Nominative, :Fem, :Singular, :Person2, "ba[r]-t-uú-k"],
-	    [:Nominative, :Common, :Plural, :Person1, "hinìn"],
+	    [:Subject, :Masc, :Plural, :Person3, "bar-aá"],
+	    [:Subject, :Fem, :Singular, :Person2, "ba[r]-t-uú-k"],
+	    [:Subject, :Common, :Plural, :Person1, "hinìn"],
 	    [:Object, :Masc, :Plural, :Person3, "bar-eé"],
-	    [:Nominative, :Common, :Singular, :Person1, "?anè"],
+	    [:Subject, :Common, :Singular, :Person1, "?anè"],
 	    [:Object, :Fem, :Plural, :Person2, "ba[r]-t-eé-k"],
-	    [:Nominative, :Fem, :Plural, :Person2, "ba[r]-t-aá-k"],
+	    [:Subject, :Fem, :Plural, :Person2, "ba[r]-t-aá-k"],
 	    [:Object, :Masc, :Singular, :Person3, "bar-oó"],
 	    [:Object, :Common, :Singular, :Person1, "?aneè-b"],
-	    [:Nominative, :Fem, :Singular, :Person3, "ba[r]-t-uú"]]
+	    [:Subject, :Fem, :Singular, :Person3, "ba[r]-t-uú"]]
     }
     {:label "beja_H-PDem"
     :common {:person :Person3
 	    :pos :Pronoun,
 	    :proClass :Demonstrative}
     :terms [[:case, :deixis, :gender, :number, :token]  ;; schema
-	    [:Nominative, :Near, :Fem, :Singular, "tuún"],
+	    [:Subject, :Near, :Fem, :Singular, "tuún"],
 	    [:Object, :Near, :Fem, :Plural, "teèn"],
-	    [:Nominative, :Far, :Fem, :Plural, "baliít"],
-	    [:Nominative, :Far, :Fem, :Singular, "beèt"],
+	    [:Subject, :Far, :Fem, :Plural, "baliít"],
+	    [:Subject, :Far, :Fem, :Singular, "beèt"],
 	    [:Object, :Far, :Fem, :Singular, "beèt"],
-	    [:Nominative, :Near, :Masc, :Plural, "?aàn"],
-	    [:Nominative, :Far, :Masc, :Plural, "baliín"],
+	    [:Subject, :Near, :Masc, :Plural, "?aàn"],
+	    [:Subject, :Far, :Masc, :Plural, "baliín"],
 	    [:Object, :Near, :Fem, :Singular, "toón"],
 	    [:Object, :Near, :Masc, :Plural, "?eèn"],
 	    [:Object, :Near, :Masc, :Singular, "?oón"],
-	    [:Nominative, :Near, :Masc, :Singular, "?uún"],
-	    [:Nominative, :Far, :Masc, :Singular, "beèn"],
+	    [:Subject, :Near, :Masc, :Singular, "?uún"],
+	    [:Subject, :Far, :Masc, :Singular, "beèn"],
 	    [:Object, :Far, :Fem, :Plural, "baliít"],
 	    [:Object, :Far, :Masc, :Singular, "beèb"],
-	    [:Nominative, :Near, :Fem, :Plural, "taàn"],
+	    [:Subject, :Near, :Fem, :Plural, "taàn"],
 	    [:Object, :Far, :Masc, :Plural, "baliíb"]]
     }}
 }
