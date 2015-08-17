@@ -10,7 +10,7 @@
            :derivedStemAug [:Intensive, :Simple]
            :formType [:Affix, :Auxiliary, :Compound, :Copula, :Stem]
            :gender [:Common, :Fem, :Masc]
-           :langVar [:Arteiga, :Hadendowa, :bishari]
+           :langVar [:Arteiga, :Hadendowa, :Bishari]
            :morphClass [:DERVSTEMFORM, :IMPTVROOTCLASSES, :TENSESTEM, :VERBALPARTICIPLES, :POSTPOSITION, :PLMARK, :SUBJMARK]
            :number [:Plural, :Singular]
            :participle [:Conjunctive, :Future, :Negative, :Past, :Present]
@@ -1131,23 +1131,23 @@
 	    :pdgmType :PluralFormation,
 	    :pos :Noun}
     :terms [[:pluralClass, :token, :lexeme]  ;; schema
-	    [:A, "sàn => sanà", :san],
-	    [:B, "miitaàt => miitàt", :miitaat],
-	    [:A, "ragàd => ragadà ", :ragad],
-	    [:B, "bikkàar => bikkàr", :bikkaar],
-	    [:B, "yàas => yàs", :yaas],
-	    [:A, "bít => bità", :bít],
-	    [:B, "kitaàb => kitàb", :kitaab],
-	    [:A, "dírim => dirmà", :dírim],
-	    [:A, "huus => huusà", :huus],
-	    [:B, "ginuúf => ginúf", :ginuuf],
-	    [:C, "kwà => kwà", :kwa],
-	    [:C, "[n]dé => [n]dè", :nde],
-	    [:A, "gàw => gawà", :gaw],
-	    [:A, "heèlay => heelayà", :heelay],
-	    [:B, "kaàm => kàm", :kaam],
-	    [:C, "baabà => baabà", :baaba],
-	    [:A, "?àb => ?abà", :ab]]
+	    [:Pl_A, "sàn => sanà", :san],
+	    [:Pl_B, "miitaàt => miitàt", :miitaat],
+	    [:Pl_A, "ragàd => ragadà ", :ragad],
+	    [:Pl_B, "bikkàar => bikkàr", :bikkaar],
+	    [:Pl_B, "yàas => yàs", :yaas],
+	    [:Pl_A, "bít => bità", :bít],
+	    [:Pl_B, "kitaàb => kitàb", :kitaab],
+	    [:Pl_A, "dírim => dirmà", :dírim],
+	    [:Pl_A, "huus => huusà", :huus],
+	    [:Pl_B, "ginuúf => ginúf", :ginuuf],
+	    [:Pl_C, "kwà => kwà", :kwa],
+	    [:Pl_C, "[n]dé => [n]dè", :nde],
+	    [:Pl_A, "gàw => gawà", :gaw],
+	    [:Pl_A, "heèlay => heelayà", :heelay],
+	    [:Pl_B, "kaàm => kàm", :kaam],
+	    [:Pl_C, "baabà => baabà", :baaba],
+	    [:Pl_A, "?àb => ?abà", :ab]]
     }
     {:label "beja_H-PPossObj"
     :common {
