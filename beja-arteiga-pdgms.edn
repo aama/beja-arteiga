@@ -245,22 +245,22 @@
 	    :pos :Verb,
 	    :formType :Stem}
     :terms [[:number, :participle, :polarity, :tam, :tamStemClass, :token]  ;; schema
-	    [:Common, :Present, :Negative, :NA, :NegClass, "-dabiil-"],
-	    [:Common, :NA, :Affirmative, :Optative, :ModClass, "-iidbil-"],
-	    [:Common, :NA, :Affirmative, :Past, :PastClass, "-dbil-"],
-	    [:Common, :Conjunctive, :Affirmative, :NA, :PartClass, "dibl-"],
-	    [:Common, :NA, :Negative, :Present, :PastClass, "-dbil-"],
+	    [:_NA, :Present, :Negative, :NA, :NegClass, "-dabiil-"],
+	    [:_NA, :NA, :Affirmative, :Optative, :ModClass, "-iidbil-"],
+	    [:_NA, :NA, :Affirmative, :Past, :PastClass, "-dbil-"],
+	    [:_NA, :Conjunctive, :Affirmative, :NA, :PartClass, "dibl-"],
+	    [:_NA, :NA, :Negative, :Present, :PastClass, "-dbil-"],
 	    [:Singular, :NA, :Affirmative, :Present, :PresSgClass, "-danbiil-"],
 	    [:Plural, :NA, :Affirmative, :Present, :PresClass, "-eedbil-"],
-	    [:Common, :Future, :Affirmative, :NA, :PartClass, "dibl-"],
-	    [:Common, :NA, :Affirmative, :Jussive, :ModClass, "-iidbil-"],
-	    [:Common, :NA, :Negative, :Optative, :NegClass, "-dabiil-"],
-	    [:Common, :Past, :Affirmative, :NA, :PartClass, "dibl-"],
-	    [:Common, :Present, :Affirmative, :NA, :PartClass, "dibl-"],
-	    [:Common, :NA, :Affirmative, :Aorist, :AoristClass, "-iidbil-"],
-	    [:Common, :NA, :Affirmative, :Imperative, :PastClass, "-dbil-"],
-	    [:Common, :NA, :Negative, :Imperative, :NegClass, "-dabiil-"],
-	    [:Common, :Conjunctive, :Negative, :NA, :NegClass, "-dabiil-"]]
+	    [:_NA, :Future, :Affirmative, :NA, :PartClass, "dibl-"],
+	    [:_NA, :NA, :Affirmative, :Jussive, :ModClass, "-iidbil-"],
+	    [:_NA, :NA, :Negative, :Optative, :NegClass, "-dabiil-"],
+	    [:_NA, :Past, :Affirmative, :NA, :PartClass, "dibl-"],
+	    [:_NA, :Present, :Affirmative, :NA, :PartClass, "dibl-"],
+	    [:_NA, :NA, :Affirmative, :Aorist, :AoristClass, "-iidbil-"],
+	    [:_NA, :NA, :Affirmative, :Imperative, :PastClass, "-dbil-"],
+	    [:_NA, :NA, :Negative, :Imperative, :NegClass, "-dabiil-"],
+	    [:_NA, :Conjunctive, :Negative, :NA, :NegClass, "-dabiil-"]]
     }
     {:label "beja_H-VFuture"
     :common {:conjClass :Suffix,
