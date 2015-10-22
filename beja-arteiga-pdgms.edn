@@ -28,6 +28,12 @@
            :tam [:Aorist, :Future, :Imperative, :Jussive, :Optative, :Past, :Present]
            :tamStemClass [:AoristClass, :ModClass, :NegClass, :PartClass, :PastClass, :PresClass, :PresSgClass]
 	  }
+:pclass {
+           :pngClass [:person :number :gender ]
+           :synsemClass [:case  :derivedStem :polarity :pos :proClass :tam ]
+           :inflClass [:conjClass  ]
+           :otherClass [ ]
+          }
 :morphemes {
   :DEFMARK {:gloss "Definite Marker", }
   :DEM {:gloss "Demonstrative", :pos :Pronoun}
