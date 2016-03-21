@@ -25,7 +25,7 @@
            :postpositionClass [:Pp_A, :Pp_B]
            :proClass [:DefMarker, :Demonstrative, :Independent, :PossObj, :ProComp]
            :rootClass [:CCC, :CCY, :CVC, :Invar]
-           :tam [:Aorist, :Future, :Imperative, :Jussive, :Optative, :PartConjunctive, :PartFuture, :PartNegative, :PartPast, :PartPresent:Past, :Present]
+           :tam [:Aorist, :Future, :Imperative, :Jussive, :Optative, :PartConjunctive, :PartFuture, :PartNegative, :PartPast, :PartPresent, :Past, :Present]
            :tamStemClass [:AoristClass, :ModClass, :NegClass, :PartClass, :PastClass, :PresClass, :PresSgClass]
 	  }
 :pclass {
@@ -975,7 +975,7 @@
             [:Suffix :S :Simple :hamas :Invar "blind" "hamašee-š-"]
             [:Suffix :S :Simple :ibaab :Invar "send on a journey" "?ibaab-s-"]
             [:Suffix :S :Simple :kadaw :Invar "jingle, rattle (tr.)" "kadaw-š-"]
-            [:Suffix :S :Simple :oos :Invar nil "make ... urinate"]
+            [:Suffix :S :Simple :oos :Invar "make ... urinate" "..."]
             [:Suffix :S :Simple :rih :Invar "make ... see show" "rih-is-"]
             [:Suffix :S :Simple :tam :Invar "feed" "tam-s-"]
             [:Suffix :SM :Intensive :adum :Invar "speak with one another" "?adum-sam-"]
