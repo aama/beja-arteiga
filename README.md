@@ -1,6 +1,5 @@
 # Beja Arteiga
 
-## Summary Information
 
 ### :datasource 
 
