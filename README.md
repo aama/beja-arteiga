@@ -3,11 +3,11 @@
 
 ### :datasource 
 
-    HudsonR1976 Appleyard2007a
+   HudsonR1976 Appleyard2007a
 
 ### :geodemoURL 
 
-    [Beja Languages](http://www.ethnologue.com/language/bej)
+   [Beja Languages](http://www.ethnologue.com/language/bej)
 
 ### :geodemoTXT 
 
