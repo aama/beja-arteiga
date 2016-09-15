@@ -1,6 +1,6 @@
 # Beja Arteiga
 
-## :datasource "
+## :datasource (cf. aama/webapp/resources/public/bibrefs-sources.edn)
 
 HudsonR1976 Appleyard2007a
 
