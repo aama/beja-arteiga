@@ -661,7 +661,7 @@
             [:M :liw :CVC :PartClass "?am-oo-laaw-"]
             [:M :liw :CVC :PastClass "-m-oo-laaw"]
             [:M :liw :CVC :PresClass "-m-oo-liiw- "]
-            [:R :cbl :CCC :PartClass "dibal-"]
+            [:R :dbl :CCC :PartClass "dibal-"]
             [:R :dbl :CCC :AoristClass "-t-dibil-"]
             [:R :dbl :CCC :ModClass "-t-dibil-"]
             [:R :dbl :CCC :NegClass "-dbaal-"]
