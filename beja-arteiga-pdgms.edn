@@ -29,13 +29,13 @@
           :synsemClass [:case :defClass :deixis :derivedStem :derivedStemAug :participle :polarity :pos :proClass :tam],
           :inflClass [:conjClass :pluralClass :postpositionClass :rootClass],
           :otherClass []}
-:morphemes *{:DEFMARK {:gloss "Definite Marker"},
+:morphemes {:DEFMARK {:gloss "Definite Marker"},
            :DEM {:gloss "Demonstrative", :pos :Pronoun},
            :PLMARK {:gloss "Noun Plural Marker"},
            :POSTPOSITION {:gloss "Postposition"},
            :PRO {:gloss "Pronoun", :pos :Pronoun},
            :SUBJMARK {:gloss "Subject Marker"}}
-:lexemes *{
+:lexemes {
            :sgy {:conjClass :Prefix, :derivedStem :S, :derivedStemAug :Simple, :rootClass :CCY, :lemma "-š-šagw-", :gloss "make ... do wrong"},
            :reeh {:conjClass :Suffix, :derivedStem :M, :derivedStemAug :Simple, :lemma "reeh-am-", :gloss "rest oneself - be made at ease"},
            :kitaab {:pluralClass :Pl_B, :token-plural "kitàb", :gloss "[x]", :lemma "kitaàb", :pos :Noun},
