@@ -6,25 +6,25 @@
 :datasourceNotes "Where there are terminological differences between Hudson and Appleyard we generally follow Appleyard. Note that Hudson uses the terms 'Preterite' and 'Past' respectively for what are here termed, following Appleyard, 'Past' and 'Aorist'. The 'Permissive' tam category forms the base of the 'Optative', with prefix 'bá-' (var. 'baà') using the modal stem class, which differs from the Aorist only for CCY verbs. Hudson also has tam categories 'Volitive' (Permissive with additional suffix -ay) and 'Negative Volitive' (= Negative Optative ['Bound Negative'] + ay)."
 :geodemoURL "http://www.ethnologue.com/language/bej"
 :geodemoTXT "Beja is a closely related group of language varieties and dialects spoken in the Red Sea coastal and hill regions in Sudan, Eritrea, and Egypt by more than a million individuals. The variety documented here is that of the Arteiga tribe in the vicinity of Port Sudan and Suakin, Sudan. This variety was studied by Richard Hudson (see especially Hudson 1976), and the data has been made conveniently available in a survey article by David Appleyard (Appleyard, 2007a)."
-:schemata{:gender [:Common :Fem :Masc],
-          :postpositionClass [:Pp_A :Pp_B],
-          :rootClass [:CCC :CCY :CVC :Invar],
-          :pdgmType [:Affix_SubjMark :POSTPOSITION :PLMARK :Stem_Tam :Finite :NA :Stem_DervTense :Stem_DervSem :NonFin_Participles :Partial_ImpertvRootClasses]
-          :polarity [:Affirmative :Negative],
-          :case [:Ablative :Equative :Locative :Nom_obj :Subject :Object :Possessive],
-          :conjClass [:Prefix :Suffix :Enclitic],
-          :langVar [:Arteiga :Hadendowa :Bishari],
-          :pluralClass [:Pl_A :Pl_B :Pl_C],
-          :pos [:Noun :Pronoun :Verb],
-          :person [:Person1 :Person2 :Person3],
-          :tamStemClass [:AoristClass :ModClass :NegClass :PartClass :PastClass :PresClass :PresSgClass],
-          :derivedStem [:B :M :R :S :SS :SM :T :BIntensive :MIntensive :SIntensive :SMIntensive :TIntensive],
-          :morphClass [:Finite :NonFin_Participles :Stem_Tam :Stem_DervSem :Stem_DervTense :Postposition :PlMark :Affix_SubjMark],
-          :proClass [:DefMarker :Demonstrative :Independent :PossObj :ProComp],
-          :tam [:Aorist :Future :Imperative :Jussive :Optative :Past :Permissive :Present :Ptcpl_Conjuctive :Ptcpl_Future :Ptcpl_Negative :Ptcpl_Past :Ptcpl_Present],
-          :number [:Plural :Singular],
-          :deixis [:Far :Near],
-          :defClass [:DefClass1 :DefClass2 :DefClass3]}
+ :schemata {:participle [:Future  :NA :Negative :Past :Present :Conjunctive],
+            :case [:Ablative :Equative :Locative :Nom_obj :Object :Possessive :Subject],
+            :conjClass [:Enclitic :Prefix :Suffix],
+            :defClass [:DefClass1 :DefClass2 :DefClass3],
+            :deixis [:Far :Near],
+            :derivedStem [:B :BIntensive :M :MIntensive :R :S :SIntensive :SMIntensive :SS :T :TIntensive]
+            :gender [:Common :Fem :Masc],
+            :langVar [:Arteiga :Bishari :Hadendowa],
+            :number [:Plural :Singular :_NA],
+            :person [:Person1 :Person2 :Person3],
+            :pluralClass [:Pl_A :Pl_B :Pl_C],
+            :polarity [:Affirmative :Negative],
+            :pos [:Noun :Pronoun :Verb],
+            :postpositionClass [:Pp_A :Pp_B],
+            :proClass [:DefMarker :Demonstrative :Independent :PossObj :ProComp],
+            :rootClass [:CCC :CCY :CVC :Invar],
+            :tam [:Aorist :Future :Imperative :Jussive :NA :Optative :Past :Permissive :Present],
+            :tamStemClass [:AoristClass :ModClass :NegClass :PartClass :PastClass :PresClass :PresSgClass]
+            :pdgmType [:Affix_SubjMark :Finite :FinitePartial :NonFin_Participles :PLMARK :POSTPOSITION :PRO :Stem_DervSem :Stem_DervTense :Stem_Tam]}
 :pclass {:pngClass [:person :number :gender],
           :synsemClass [:case :defClass :deixis :derivedStem :derivedStemAug :participle :polarity :pos :proClass :tam],
           :inflClass [:conjClass :pluralClass :postpositionClass :rootClass],
@@ -127,7 +127,6 @@
     :common {:lexeme :COPULA,
              :conjClass :Enclitic,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :tam :Present}
     :terms [[:number :person :gender :token],
@@ -149,7 +148,6 @@
     :common {:conjClass :Suffix,
              :lexeme :tam,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :tam :Future}
     :terms [[:number :person :gender :token],
@@ -163,7 +161,6 @@
     :common {:lexeme :AUXILIARY,
              :conjClass :Prefix,
              :polarity :Negative,
-             :morphClass :Finite,
              :pos :Verb,
              :tam :Past}
     :terms [[:number :person :gender :token],
@@ -182,7 +179,6 @@
     :common {:lexeme :tam,
              :conjClass :Suffix,
              :polarity :Negative,
-             :morphClass :Finite,
              :pos :Verb,
              :tam :Past}
     :terms [[:number :person :gender :token],
@@ -200,7 +196,6 @@
     :common {:conjClass :Prefix,
              :lexeme :dbl,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CCC,
              :tam :Aorist}
@@ -219,7 +214,6 @@
     :common {:conjClass :Prefix,
              :lexeme :dbl,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CCC,
              :tam :Permissive}
@@ -239,7 +233,6 @@
              :lexeme :dbl,
              :person :Person2,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CCC,
              :tam :Imperative}
@@ -253,7 +246,6 @@
     :common {:conjClass :Prefix,
              :lexeme :dbl,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CCC,
              :tam :Optative}
@@ -272,7 +264,6 @@
     :common {:conjClass :Prefix,
              :lexeme :dbl,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CCC,
              :tam :Past}
@@ -291,7 +282,6 @@
     :common {:conjClass :Prefix,
              :lexeme :dbl,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CCC,
              :tam :Present}
@@ -310,7 +300,6 @@
     :common {:conjClass :Prefix,
              :lexeme :dgy,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CCY,
              :tam :Aorist}
@@ -329,7 +318,6 @@
     :common {:conjClass :Prefix,
              :lexeme :dgy,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CCY,
              :tam :Permissive}
@@ -349,7 +337,6 @@
              :lexeme :dgy,
              :person :Person2,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CCY,
              :tam :Imperative}
@@ -363,7 +350,6 @@
     :common {:conjClass :Prefix,
              :lexeme :dgy,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CCY,
              :tam :Optative}
@@ -382,7 +368,6 @@
     :common {:conjClass :Prefix,
              :lexeme :dgy,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CCY,
              :tam :Past}
@@ -401,7 +386,6 @@
     :common {:conjClass :Prefix,
              :lexeme :dgy,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CCY,
              :tam :Present}
@@ -421,7 +405,6 @@
     :common {:conjClass :Prefix,
              :lexeme :bis,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CVC,
              :tam :Aorist}
@@ -441,7 +424,6 @@
     :common {:conjClass :Prefix,
              :lexeme :bis,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CVC,
              :tam :Permissive}
@@ -462,7 +444,6 @@
              :lexeme :bis,
              :person :Person2,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CVC,
              :tam :Imperative}
@@ -477,7 +458,6 @@
     :common {:conjClass :Prefix,
              :lexeme :bis,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CVC,
              :tam :Optative}
@@ -497,7 +477,6 @@
     :common {:conjClass :Prefix,
              :lexeme :bis,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CVC,
              :tam :Past}
@@ -517,7 +496,6 @@
     :common {:conjClass :Prefix,
              :lexeme :bis,
              :polarity :Affirmative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CVC,
              :tam :Present}
@@ -537,7 +515,6 @@
              :lexeme :dbl,
              :person :Person2,
              :polarity :Negative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CCC,
              :tam :Imperative}
@@ -551,7 +528,6 @@
     :common {:conjClass :Prefix,
              :lexeme :dbl,
              :polarity :Negative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CCC,
              :tam :Optative}
@@ -570,7 +546,6 @@
     :common {:conjClass :Prefix,
              :lexeme :dbl,
              :polarity :Negative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CCC,
              :tam :Present}
@@ -590,7 +565,6 @@
              :lexeme :dgy,
              :person :Person2,
              :polarity :Negative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CCY,
              :tam :Imperative}
@@ -604,7 +578,6 @@
     :common {:conjClass :Prefix,
              :lexeme :dgy,
              :polarity :Negative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CCY,
              :tam :Optative}
@@ -623,7 +596,6 @@
     :common {:conjClass :Prefix,
              :lexeme :dgy,
              :polarity :Negative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CCY,
              :tam :Present}
@@ -644,7 +616,6 @@
              :lexeme :bis,
              :person :Person2,
              :polarity :Negative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CVC,
              :tam :Imperative}
@@ -659,7 +630,6 @@
     :common {:conjClass :Prefix,
              :lexeme :bis,
              :polarity :Negative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CVC,
              :tam :Optative}
@@ -679,7 +649,6 @@
     :common {:conjClass :Prefix,
              :lexeme :bis,
              :polarity :Negative,
-             :morphClass :Finite,
              :pos :Verb,
              :rootClass :CVC,
              :tam :Present}
@@ -693,10 +662,156 @@
             [:Plural :Person2 :Common "kí-t-bis-`na"],
             [:Plural :Person3 :Common "k-iì-bis-`na"]]
     }
+    {:label "beja_H-VSuffAffAor"
+    :pdgmType :Finite
+    :common {:conjClass :Suffix,
+             :lexeme :tam,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Aorist}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "tam-ì"],
+            [:Singular :Person2 :Masc "tam-tii-`a"],
+            [:Singular :Person2 :Fem "tam-tii-`"],
+            [:Singular :Person3 :Masc "tam-ì"],
+            [:Singular :Person3 :Fem "tam-tì"],
+            [:Plural :Person1 :Common "tam-nì"],
+            [:Plural :Person2 :Common "tam-tiìna"],
+            [:Plural :Person3 :Common "tam-iìn"]]
+    }
+    {:label "beja_H-VSuffAffPerm"
+    :pdgmType :Finite
+    :common {:conjClass :Suffix,
+             :lexeme :tam,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Permissive}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "tam-ì"],
+            [:Singular :Person2 :Masc "tam-tii-`a"],
+            [:Singular :Person2 :Fem "tam-tii-`"],
+            [:Singular :Person3 :Masc "tam-ì"],
+            [:Singular :Person3 :Fem "tam-tì"],
+            [:Plural :Person1 :Common "tam-nì"],
+            [:Plural :Person2 :Common "tam-tiìna"],
+            [:Plural :Person3 :Common "tam-iìn"]]
+    }
+    {:label "beja_H-VSuffAffImprtv"
+    :pdgmType :Finite
+    :common {:conjClass :Suffix,
+             :lexeme :tam,
+             :person :Person2,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Imperative}
+    :terms [[:number :gender :token],
+            [:Singular :Masc "tam-àa"],
+            [:Singular :Fem "tam-ìi"],
+            [:Plural :Common "tam-aa-`na"]]
+    }
+    {:label "beja_H-VSuffAffOpt"
+    :pdgmType :Finite
+    :common {:conjClass :Suffix,
+             :lexeme :tam,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Optative}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "bá-tam-ì"],
+            [:Singular :Person2 :Masc "bá-tam-tii-`a"],
+            [:Singular :Person2 :Fem "bá-tam-tii-`"],
+            [:Singular :Person3 :Masc "bá-tam-ì"],
+            [:Singular :Person3 :Fem "bá-tam-tì"],
+            [:Plural :Person1 :Common "bá-tam-nì"],
+            [:Plural :Person2 :Common "bá-tam-tiìna"],
+            [:Plural :Person3 :Common "bá-tam-iìn"]]
+    }
+    {:label "beja_H-VSuffAffPast"
+    :pdgmType :Finite
+    :common {:conjClass :Suffix,
+             :lexeme :tam,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Past}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "tam-àn"],
+            [:Singular :Person2 :Masc "tam-taa-`"],
+            [:Singular :Person2 :Fem "tam-taa-`i"],
+            [:Singular :Person3 :Masc "tam-yà"],
+            [:Singular :Person3 :Fem "tam-tà"],
+            [:Plural :Person1 :Common "tam-nà"],
+            [:Plural :Person2 :Common "tam-taàna"],
+            [:Plural :Person3 :Common "tam-yaàn"]]
+    }
+    {:label "beja_H-VSuffAffPres"
+    :pdgmType :Finite
+    :common {:conjClass :Suffix,
+             :lexeme :tam,
+             :polarity :Affirmative,
+             :pos :Verb,
+             :tam :Present}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "tam-àní"],
+            [:Singular :Person2 :Masc "tam-tinii-`a"],
+            [:Singular :Person2 :Fem "tam-tinii-`"],
+            [:Singular :Person3 :Masc "tam-íiní"],
+            [:Singular :Person3 :Fem "tam-tíní"],
+            [:Plural :Person1 :Common "tam-này"],
+            [:Plural :Person2 :Common "tam-teéna"],
+            [:Plural :Person3 :Common "tam-eén"]]
+    }
+    {:label "beja_H-VSuffNegImprtv"
+    :pdgmType :Finite
+    :common {:conjClass :Suffix,
+             :lexeme :tam,
+             :person :Person2,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :Imperative}
+    :terms [[:number :gender :token],
+            [:Singular :Masc "b-àa-tam-aa-`"],
+            [:Singular :Fem "b-íi-tam-a-`y"],
+            [:Plural :Common "b-àa-tam-aa-`na"]]
+    }
+    {:label "beja_H-VSuffNegOpt"
+    :pdgmType :Finite
+    :common {:conjClass :Suffix,
+             :lexeme :tam,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :Optative}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "b-aa-tam-ày"],
+            [:Singular :Person2 :Masc "bi-t-tam-ay-`a"],
+            [:Singular :Person2 :Fem "bi-t-tam-ay-`"],
+            [:Singular :Person3 :Masc "b-ii-tam-ày"],
+            [:Singular :Person3 :Fem "bi-t-tam-ày"],
+            [:Plural :Person1 :Common "bi-n-tam-ày"],
+            [:Plural :Person2 :Common "bi-t-tam-ay-`na"],
+            [:Plural :Person3 :Common "b-ii-tam-ay-`na"]]
+    }
+    {:label "beja_H-VSuffNegPres"
+    :pdgmType :Finite
+    :common {:conjClass :Suffix,
+             :lexeme :tam,
+             :polarity :Negative,
+             :pos :Verb,
+             :tam :Present}
+    :terms [[:number :person :gender :token],
+            [:Singular :Person1 :Common "kà-tam-àn"],
+            [:Singular :Person2 :Masc "kà-tam-taa-`"],
+            [:Singular :Person2 :Fem "kà-tam-taa-`i"],
+            [:Singular :Person3 :Masc "kà-tam-yà"],
+            [:Singular :Person3 :Fem "kà-tam-tà"],
+            [:Plural :Person1 :Common "kà-tam-nà"],
+            [:Plural :Person2 :Common "kà-tam-taàna"],
+            [:Plural :Person3 :Common "kà-tam-yaàn"]]
+    }
+]
+:muterms [
     {:label "beja_H-VStemClassPrefTense"
     :pdgmType :Stem_DervTense
     :common {:conjClass :Prefix,
-             :morphClass :Stem_DervTense,
              :pos :Verb}
     :terms [[:derivedStem :lexeme :rootClass :tamStemClass :token],
             [:BIntensive :dbl :CCC :AoristClass "-ii-dbal-"],
@@ -745,7 +860,7 @@
             [:MIntensive :dbl :CCC :PastClass "-m-ee-dbaal-"],
             [:MIntensive :dbl :CCC :PresClass "-m-ee-dbiil- "],
             [:MIntensive :dgy :CCY :AoristClass "-m-ii-dgi-"],
-            [:MIntensive :dgy :CCY :ModClass "-m-ii-dga-"],
+            [:Mintensive :dgy :CCY :ModClass "-m-ii-dga-"],
             [:MIntensive :dgy :CCY :NegClass "-m-ee-dgi-"],
             [:MIntensive :dgy :CCY :PartClass "?amee-dag(aa)y"],
             [:MIntensive :dgy :CCY :PastClass "-m-ee-dgaay-"],
@@ -867,8 +982,7 @@
     }
     {:label "beja_H-VStemDervExx"
     :pdgmType :Stem_DervSem
-    :common {:morphClass :Stem_DervSem,
-             :pos :Verb}
+    :common {:pos :Verb}
     :terms [[:conjClass :derivedStem :lexeme :rootClass :token-note :token],
             [:Prefix :B :bis :CVC "bury" "bis-"],
             [:Prefix :B :dbl :CCC "collect" "dibìl-"],
@@ -974,7 +1088,7 @@
     :common {:derivedStem :B,
              :lexeme :dbl,
              :pos :Verb,
-             :morphClass :Stem_Tam}
+             }
     :terms [[:participle :polarity :tam :tamStemClass :number :token],
             [:Conjunctive :Affirmative :NA :PartClass :_NA "dibl-"],
             [:Conjunctive :Negative :NA :NegClass :_NA "-dabiil-"],
@@ -993,164 +1107,8 @@
             [:Present :Affirmative :NA :PartClass :_NA "dibl-"],
             [:Present :Negative :NA :NegClass :_NA "-dabiil-"]]
     }
-    {:label "beja_H-VSuffAffAor"
-    :pdgmType :Finite
-    :common {:conjClass :Suffix,
-             :lexeme :tam,
-             :polarity :Affirmative,
-             :morphClass :Finite,
-             :pos :Verb,
-             :tam :Aorist}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "tam-ì"],
-            [:Singular :Person2 :Masc "tam-tii-`a"],
-            [:Singular :Person2 :Fem "tam-tii-`"],
-            [:Singular :Person3 :Masc "tam-ì"],
-            [:Singular :Person3 :Fem "tam-tì"],
-            [:Plural :Person1 :Common "tam-nì"],
-            [:Plural :Person2 :Common "tam-tiìna"],
-            [:Plural :Person3 :Common "tam-iìn"]]
-    }
-    {:label "beja_H-VSuffAffPerm"
-    :pdgmType :Finite
-    :common {:conjClass :Suffix,
-             :lexeme :tam,
-             :polarity :Affirmative,
-             :morphClass :Finite,
-             :pos :Verb,
-             :tam :Permissive}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "tam-ì"],
-            [:Singular :Person2 :Masc "tam-tii-`a"],
-            [:Singular :Person2 :Fem "tam-tii-`"],
-            [:Singular :Person3 :Masc "tam-ì"],
-            [:Singular :Person3 :Fem "tam-tì"],
-            [:Plural :Person1 :Common "tam-nì"],
-            [:Plural :Person2 :Common "tam-tiìna"],
-            [:Plural :Person3 :Common "tam-iìn"]]
-    }
-    {:label "beja_H-VSuffAffImprtv"
-    :pdgmType :Finite
-    :common {:conjClass :Suffix,
-             :lexeme :tam,
-             :person :Person2,
-             :polarity :Affirmative,
-             :morphClass :Finite,
-             :pos :Verb,
-             :tam :Imperative}
-    :terms [[:number :gender :token],
-            [:Singular :Masc "tam-àa"],
-            [:Singular :Fem "tam-ìi"],
-            [:Plural :Common "tam-aa-`na"]]
-    }
-    {:label "beja_H-VSuffAffOpt"
-    :pdgmType :Finite
-    :common {:conjClass :Suffix,
-             :lexeme :tam,
-             :polarity :Affirmative,
-             :morphClass :Finite,
-             :pos :Verb,
-             :tam :Optative}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "bá-tam-ì"],
-            [:Singular :Person2 :Masc "bá-tam-tii-`a"],
-            [:Singular :Person2 :Fem "bá-tam-tii-`"],
-            [:Singular :Person3 :Masc "bá-tam-ì"],
-            [:Singular :Person3 :Fem "bá-tam-tì"],
-            [:Plural :Person1 :Common "bá-tam-nì"],
-            [:Plural :Person2 :Common "bá-tam-tiìna"],
-            [:Plural :Person3 :Common "bá-tam-iìn"]]
-    }
-    {:label "beja_H-VSuffAffPast"
-    :pdgmType :Finite
-    :common {:conjClass :Suffix,
-             :lexeme :tam,
-             :polarity :Affirmative,
-             :morphClass :Finite,
-             :pos :Verb,
-             :tam :Past}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "tam-àn"],
-            [:Singular :Person2 :Masc "tam-taa-`"],
-            [:Singular :Person2 :Fem "tam-taa-`i"],
-            [:Singular :Person3 :Masc "tam-yà"],
-            [:Singular :Person3 :Fem "tam-tà"],
-            [:Plural :Person1 :Common "tam-nà"],
-            [:Plural :Person2 :Common "tam-taàna"],
-            [:Plural :Person3 :Common "tam-yaàn"]]
-    }
-    {:label "beja_H-VSuffAffPres"
-    :pdgmType :Finite
-    :common {:conjClass :Suffix,
-             :lexeme :tam,
-             :polarity :Affirmative,
-             :morphClass :Finite,
-             :pos :Verb,
-             :tam :Present}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "tam-àní"],
-            [:Singular :Person2 :Masc "tam-tinii-`a"],
-            [:Singular :Person2 :Fem "tam-tinii-`"],
-            [:Singular :Person3 :Masc "tam-íiní"],
-            [:Singular :Person3 :Fem "tam-tíní"],
-            [:Plural :Person1 :Common "tam-này"],
-            [:Plural :Person2 :Common "tam-teéna"],
-            [:Plural :Person3 :Common "tam-eén"]]
-    }
-    {:label "beja_H-VSuffNegImprtv"
-    :pdgmType :Finite
-    :common {:conjClass :Suffix,
-             :lexeme :tam,
-             :person :Person2,
-             :polarity :Negative,
-             :morphClass :Finite,
-             :pos :Verb,
-             :tam :Imperative}
-    :terms [[:number :gender :token],
-            [:Singular :Masc "b-àa-tam-aa-`"],
-            [:Singular :Fem "b-íi-tam-a-`y"],
-            [:Plural :Common "b-àa-tam-aa-`na"]]
-    }
-    {:label "beja_H-VSuffNegOpt"
-    :pdgmType :Finite
-    :common {:conjClass :Suffix,
-             :lexeme :tam,
-             :polarity :Negative,
-             :morphClass :Finite,
-             :pos :Verb,
-             :tam :Optative}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "b-aa-tam-ày"],
-            [:Singular :Person2 :Masc "bi-t-tam-ay-`a"],
-            [:Singular :Person2 :Fem "bi-t-tam-ay-`"],
-            [:Singular :Person3 :Masc "b-ii-tam-ày"],
-            [:Singular :Person3 :Fem "bi-t-tam-ày"],
-            [:Plural :Person1 :Common "bi-n-tam-ày"],
-            [:Plural :Person2 :Common "bi-t-tam-ay-`na"],
-            [:Plural :Person3 :Common "b-ii-tam-ay-`na"]]
-    }
-    {:label "beja_H-VSuffNegPres"
-    :pdgmType :Finite
-    :common {:conjClass :Suffix,
-             :lexeme :tam,
-             :polarity :Negative,
-             :morphClass :Finite,
-             :pos :Verb,
-             :tam :Present}
-    :terms [[:number :person :gender :token],
-            [:Singular :Person1 :Common "kà-tam-àn"],
-            [:Singular :Person2 :Masc "kà-tam-taa-`"],
-            [:Singular :Person2 :Fem "kà-tam-taa-`i"],
-            [:Singular :Person3 :Masc "kà-tam-yà"],
-            [:Singular :Person3 :Fem "kà-tam-tà"],
-            [:Plural :Person1 :Common "kà-tam-nà"],
-            [:Plural :Person2 :Common "kà-tam-taàna"],
-            [:Plural :Person3 :Common "kà-tam-yaàn"]]
-    }
-]
-:muterms [
     {:label "beja_H-P3sgProDialectDist"
-    :pdgmType :NA
+    :pdgmType :PRO
     :common {:proClass :ProComp,
              :pos :Pronoun,
              :person :Person3}
@@ -1173,7 +1131,7 @@
             [:Possessive :Hadendowa :Plural "-/-hna"]]
     }
     {:label "beja_H-PDefMarker"
-    :pdgmType :NA
+    :pdgmType :PRO
     :common {:pos :Pronoun,
              :person :Person3,
              :proClass :DefMarker}
@@ -1196,7 +1154,7 @@
             [:Subject :DefClass1 :Plural :Fem "taa-"]]
     }
     {:label "beja_H-PDem"
-    :pdgmType :NA
+    :pdgmType :PRO
     :common {:person :Person3,
              :pos :Pronoun,
              :proClass :Demonstrative}
@@ -1219,7 +1177,7 @@
             [:Subject :Near :Plural :Fem "taàn"]]
     }
     {:label "beja_H-PInd"
-    :pdgmType :NA
+    :pdgmType :PRO
     :common {:pos :Pronoun,
              :proClass :Independent}
     :terms [[:case :number :person :gender :token],
@@ -1245,7 +1203,7 @@
             [:Subject :Plural :Person3 :Fem "ba[r]-t-aá"]]
     }
     {:label "beja_H-PPossObj"
-    :pdgmType :NA
+    :pdgmType :PRO
     :common {:pos :Pronoun,
              :proClass :PossObj}
     :terms [[:case :number :person :token],
@@ -1264,8 +1222,7 @@
     }
     {:label "beja_H-VSubjMarkers"
     :pdgmType :Affix_SubjMark
-    :common {:morphClass :Affix_SubjMark,
-             :pos :Verb}
+    :common {:pos :Verb}
     :terms [[:number :person :gender :token],
             [:Singular :Person1 :Common "?a-~-Ø-"],
             [:Singular :Person2 :Masc "ti-~ -Ø-/-t- + -`a"],
@@ -1279,7 +1236,6 @@
     {:label "beja_H-VParticiple"
     :pdgmType :NonFin_Participles
     :common {:derivedStem :B,
-             :morphClass :NonFin_Participles,
              :pos :Verb}
     :terms [[:conjClass :lexeme :participle :token-note :token],
             [:Prefix :dbl :Conjunctive "Suff: -tií \"X collected and ...\"" "dibil-tií"],
@@ -1294,7 +1250,7 @@
             [:Suffix :tam :Present "Suff: -ée \"(while) eating\"" "tam-ée"]]
     }
     {:label "beja_H-VImperativeRootClassExx"
-     :pdgmType :Partial_ImpertvRootClasses,
+     :pdgmType :FinitePartial,
     :common {:gender :Masc,
              :pos :Verb,
              :person :Person2,
@@ -1330,8 +1286,7 @@
     }
     {:label "beja_H-NPluralFormation"
     :pdgmType :PLMARK
-    :common {:morphClass :PLMARK,
-             :pos :Noun}
+    :common {:pos :Noun}
     :terms [[:lexeme :pluralClass :token],
             [:ab :Pl_A "?àb => ?abà"],
             [:baaba :Pl_C "baabà => baabà"],
@@ -1353,8 +1308,7 @@
     }
     {:label "beja_H-PPostposition"
     :pdgmType :POSTPOSITION
-    :common {:morphClass :POSTPOSITION,
-             :pos :Noun}
+    :common {:pos :Noun}
     :terms [[:case :postpositionClass :token],
             [:Ablative :Pp_A "..."],
             [:Ablative :Pp_B "-s-"],
