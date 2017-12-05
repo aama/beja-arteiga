@@ -3,18 +3,20 @@
 :subfamily "Beja"
 :sgpref "bar"
 :datasource "HudsonR1976 Appleyard2007a"
-:datasourceNotes "Where there are terminological differences between Hudson and Appleyard we generally follow Appleyard. Note that Hudson uses the terms 'Preterite' and 'Past' respectively for what are here termed, following Appleyard, 'Past' and 'Aorist'. The 'Permissive' tam category forms the base of the 'Optative', with prefix 'bá-' (var. 'baà') using the modal stem class, which differs from the Aorist only for CCY verbs. Hudson also has tam categories 'Volitive' (Permissive with additional suffix -ay) and 'Negative Volitive' (= Negative Optative ['Bound Negative'] + ay)."
+:datasourceNotes "Where  there  are  terminological  differences between Hudson and Appleyard we generally follow Appleyard. Note that Hudson uses the terms 'Preterite' and 'Past' respectively for what are here termed, following Appleyard, 'Past' and 'Aorist'. The 'Permissive' tam category forms the base of the 'Optative', with prefix 'bá-' (var. 'baà') using the modal stem class, which differs from the Aorist only for CCY verbs. Hudson also has tam categories 'Volitive' (Permissive with additional suffix -ay) and 'Negative Volitive' (= Negative Optative ['Bound Negative'] + ay)."
 :geodemoURL "http://www.ethnologue.com/language/bej"
 :geodemoTXT "Beja is a closely related group of language varieties and dialects spoken in the Red Sea coastal and hill regions in Sudan, Eritrea, and Egypt by more than a million individuals. The variety documented here is that of the Arteiga tribe in the vicinity of Port Sudan and Suakin, Sudan. This variety was studied by Richard Hudson (see especially Hudson 1976), and the data has been made conveniently available in a survey article by David Appleyard (Appleyard, 2007a)."
- :schemata {:participle [:Future  :NA :Negative :Past :Present :Conjunctive],
+ :schemata {:vmorphClass [:Affix_SubjMark  :NonFin_Participles :Stem_DervSem :Stem_DervTense :Stem_Tam],
+            :nmorphClass [:PLMARK :POSTPOSITION],
             :case [:Ablative :Equative :Locative :Nom_obj :Object :Possessive :Subject],
             :conjClass [:Enclitic :Prefix :Suffix],
             :defClass [:DefClass1 :DefClass2 :DefClass3],
             :deixis [:Far :Near],
-            :derivedStem [:B :BIntensive :M :MIntensive :R :S :SIntensive :SMIntensive :SS :T :TIntensive]
+            :derivedStem [:B :BIntensive :M :MIntensive :R :S :SIntensive :SMIntensive :SS :T :TIntensive],
             :gender [:Common :Fem :Masc],
             :langVar [:Arteiga :Bishari :Hadendowa],
             :number [:Plural :Singular :_NA],
+            :participle [:Conjunctive :Future :NA :Negative :Past :Present],
             :person [:Person1 :Person2 :Person3],
             :pluralClass [:Pl_A :Pl_B :Pl_C],
             :polarity [:Affirmative :Negative],
@@ -24,7 +26,7 @@
             :rootClass [:CCC :CCY :CVC :Invar],
             :tam [:Aorist :Future :Imperative :Jussive :NA :Optative :Past :Permissive :Present],
             :tamStemClass [:AoristClass :ModClass :NegClass :PartClass :PastClass :PresClass :PresSgClass]
-            :pdgmType [:Affix_SubjMark :Finite :FinitePartial :NonFin_Participles :PLMARK :POSTPOSITION :PRO :Stem_DervSem :Stem_DervTense :Stem_Tam]}
+            :pdgmType [:Finite :FinitePartial :PRO :NOM :VOther]}
 :pclass {:pngClass [:person :number :gender],
           :synsemClass [:case :defClass :deixis :derivedStem :derivedStemAug :participle :polarity :pos :proClass :tam],
           :inflClass [:conjClass :pluralClass :postpositionClass :rootClass],
@@ -810,8 +812,9 @@
 ]
 :muterms [
     {:label "beja_H-VStemClassPrefTense"
-    :pdgmType :Stem_DervTense
-    :common {:conjClass :Prefix,
+    :pdgmType :VOther
+    :common {:vmorphClass :Stem_DervTense
+             :conjClass :Prefix,
              :pos :Verb}
     :terms [[:derivedStem :lexeme :rootClass :tamStemClass :token],
             [:BIntensive :dbl :CCC :AoristClass "-ii-dbal-"],
@@ -860,7 +863,7 @@
             [:MIntensive :dbl :CCC :PastClass "-m-ee-dbaal-"],
             [:MIntensive :dbl :CCC :PresClass "-m-ee-dbiil- "],
             [:MIntensive :dgy :CCY :AoristClass "-m-ii-dgi-"],
-            [:Mintensive :dgy :CCY :ModClass "-m-ii-dga-"],
+            [:MIntensive :dgy :CCY :ModClass "-m-ii-dga-"],
             [:MIntensive :dgy :CCY :NegClass "-m-ee-dgi-"],
             [:MIntensive :dgy :CCY :PartClass "?amee-dag(aa)y"],
             [:MIntensive :dgy :CCY :PastClass "-m-ee-dgaay-"],
@@ -981,8 +984,9 @@
             [:T :liw :CVC :PresClass "-t-oo-liiw- "]]
     }
     {:label "beja_H-VStemDervExx"
-    :pdgmType :Stem_DervSem
-    :common {:pos :Verb}
+    :pdgmType :VOther
+    :common {:vmorphClass :Stem_DervSem
+             :pos :Verb}
     :terms [[:conjClass :derivedStem :lexeme :rootClass :token-note :token],
             [:Prefix :B :bis :CVC "bury" "bis-"],
             [:Prefix :B :dbl :CCC "collect" "dibìl-"],
@@ -1084,8 +1088,9 @@
             [:Suffix :SS :tam :Invar "cause to feed" "tam-siis-"]]
     }
     {:label "beja_H-VStemFormationTense"
-    :pdgmType :Stem_Tam
-    :common {:derivedStem :B,
+    :pdgmType :VOther
+    :common {:vmorphClass :Stem_Tam
+             :derivedStem :B,
              :lexeme :dbl,
              :pos :Verb,
              }
@@ -1221,8 +1226,9 @@
             [:Possessive :Plural :Person3 "-`hina"]]
     }
     {:label "beja_H-VSubjMarkers"
-    :pdgmType :Affix_SubjMark
-    :common {:pos :Verb}
+    :pdgmType :VOther
+    :common {:vmorphClass :Affix_SubjMark
+             :pos :Verb}
     :terms [[:number :person :gender :token],
             [:Singular :Person1 :Common "?a-~-Ø-"],
             [:Singular :Person2 :Masc "ti-~ -Ø-/-t- + -`a"],
@@ -1234,8 +1240,9 @@
             [:Plural :Person3 :Common "?i-/-y- + -`n(a)"]]
     }
     {:label "beja_H-VParticiple"
-    :pdgmType :NonFin_Participles
-    :common {:derivedStem :B,
+    :pdgmType :VOther
+    :common {:vmorphClass :NonFin_Participles
+             :derivedStem :B,
              :pos :Verb}
     :terms [[:conjClass :lexeme :participle :token-note :token],
             [:Prefix :dbl :Conjunctive "Suff: -tií \"X collected and ...\"" "dibil-tií"],
@@ -1285,8 +1292,9 @@
             [:Suffix :tam :Invar "tam-àa"]]
     }
     {:label "beja_H-NPluralFormation"
-    :pdgmType :PLMARK
-    :common {:pos :Noun}
+    :pdgmType :NOM
+    :common {:nmorphClass :PLMARK
+             :pos :Noun}
     :terms [[:lexeme :pluralClass :token],
             [:ab :Pl_A "?àb => ?abà"],
             [:baaba :Pl_C "baabà => baabà"],
@@ -1307,8 +1315,9 @@
             [:yaas :Pl_B "yàas => yàs"]]
     }
     {:label "beja_H-PPostposition"
-    :pdgmType :POSTPOSITION
-    :common {:pos :Noun}
+    :pdgmType :NOM
+    :common {:nmorphClass :POSTPOSITION
+             :pos :Noun}
     :terms [[:case :postpositionClass :token],
             [:Ablative :Pp_A "..."],
             [:Ablative :Pp_B "-s-"],
