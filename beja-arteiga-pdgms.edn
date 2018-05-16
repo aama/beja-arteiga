@@ -118,7 +118,7 @@
            :ktb {:conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CCC, :lemma "kitb-a", :gloss "write"}}
  :termclusters [
                 {:label "beja_H-VCopula"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :COPULA,
                           :conjClass :Enclitic,
                           :polarity :Affirmative,
@@ -139,7 +139,7 @@
                          [:Plural :Person3 :Fem "STEM=ta"]]
                  }
                 {:label "beja_H-VFuture"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :polarity :Affirmative,
@@ -152,7 +152,7 @@
                          [:Plural :Person2 :Common "tam-át-na"]]
                  }
                 {:label "beja_H-VNegAux"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :AUXILIARY,
                           :conjClass :Prefix,
                           :polarity :Negative,
@@ -170,7 +170,7 @@
                  }
                 {:label "beja_H-VNegPast"
                  :note "The negative past is formed with the past participle of the verb, followed by the negative past of the auxiliary verb kaa-~kee-"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :lexeme :tam,
                           :conjClass :Suffix,
                           :polarity :Negative,
@@ -187,7 +187,7 @@
                          [:Plural :Person3 :Common "tamaa-`b/`t kiìkeèn"]]
                  }
                 {:label "beja_H-VPrefAffCCCAor"
-                 :common {:vmorphclass :Finite
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dbl,
                           :polarity :Affirmative,
@@ -205,7 +205,7 @@
                          [:Plural :Person3 :Common "?-iidbil-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCCPerm"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :dbl,
                           :polarity :Affirmative,
@@ -223,7 +223,7 @@
                          [:Plural :Person3 :Common "?-iidbil-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCCImprtv"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :dbl,
                           :person :Person2,
@@ -237,7 +237,7 @@
                          [:Plural :Common "dibil-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCCOpt"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :dbl,
                           :polarity :Affirmative,
@@ -255,7 +255,7 @@
                          [:Plural :Person3 :Common "bá-?-iidbil-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCCPast"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :dbl,
                           :polarity :Affirmative,
@@ -273,7 +273,7 @@
                          [:Plural :Person3 :Common "?i-dbil-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCCPres"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :dbl,
                           :polarity :Affirmative,
@@ -291,7 +291,7 @@
                          [:Plural :Person3 :Common "?-eedbil-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCYAor"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :dgy,
                           :polarity :Affirmative,
@@ -309,7 +309,7 @@
                          [:Plural :Person3 :Common "?i-diig-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCYPerm"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :dgy,
                           :polarity :Affirmative,
@@ -327,7 +327,7 @@
                          [:Plural :Person3 :Common "?i-daag-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCYImprtv"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :dgy,
                           :person :Person2,
@@ -341,7 +341,7 @@
                          [:Plural :Common "digii-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCYOpt"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :dgy,
                           :polarity :Affirmative,
@@ -359,7 +359,7 @@
                          [:Plural :Person3 :Common "bá-?i-daag-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCYPast"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :dgy,
                           :polarity :Affirmative,
@@ -377,7 +377,7 @@
                          [:Plural :Person3 :Common "?i-dgiil-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCYPres"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :dgy,
                           :polarity :Affirmative,
@@ -396,7 +396,7 @@
                  }
                 {:label "beja_H-VPrefAffCVCAor"
                  :note "rootClass CVC is sometimes also noted as rootClass CC"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :bis,
                           :polarity :Affirmative,
@@ -415,7 +415,7 @@
                  }
                 {:label "beja_H-VPrefAffCVCPerm"
                  :note "rootClass CVC is sometimes also noted as rootClass CC"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :bis,
                           :polarity :Affirmative,
@@ -434,7 +434,7 @@
                  }
                 {:label "beja_H-VPrefAffCVCImprtv"
                  :note "rootClass CVC is sometimes also noted as rootClass CC"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :bis,
                           :person :Person2,
@@ -449,7 +449,7 @@
                  }
                 {:label "beja_H-VPrefAffCVCOpt"
                  :note "rootClass CVC is sometimes also noted as rootClass CC"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :bis,
                           :polarity :Affirmative,
@@ -468,7 +468,7 @@
                  }
                 {:label "beja_H-VPrefAffCVCPast"
                  :note "rootClass CVC is sometimes also noted as rootClass CC"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :bis,
                           :polarity :Affirmative,
@@ -487,7 +487,7 @@
                  }
                 {:label "beja_H-VPrefAffCVCPres"
                  :note "rootClass CVC is sometimes also noted as rootClass CC"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :bis,
                           :polarity :Affirmative,
@@ -505,7 +505,7 @@
                          [:Plural :Person3 :Common "?-eebis-`na"]]
                  }
                 {:label "beja_H-VPrefNegCCCImprtv"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :dbl,
                           :person :Person2,
@@ -519,7 +519,7 @@
                          [:Plural :Common "b-àa-dabiil-`na"]]
                  }
                 {:label "beja_H-VPrefNegCCCOpt"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :dbl,
                           :polarity :Negative,
@@ -537,7 +537,7 @@
                          [:Plural :Person3 :Common "b-ii-dabiil-`na"]]
                  }
                 {:label "beja_H-VPrefNegCCCPres"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :dbl,
                           :polarity :Negative,
@@ -555,7 +555,7 @@
                          [:Plural :Person3 :Common "k-iì-dbil-`na"]]
                  }
                 {:label "beja_H-VPrefNegCCYImprtv"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :dgy,
                           :person :Person2,
@@ -569,7 +569,7 @@
                          [:Plural :Common "b-àa-dagii-`na"]]
                  }
                 {:label "beja_H-VPrefNegCCYOpt"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :dgy,
                           :polarity :Negative,
@@ -587,7 +587,7 @@
                          [:Plural :Person3 :Common "b-ii-dagii-`na"]]
                  }
                 {:label "beja_H-VPrefNegCCYPres"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :dgy,
                           :polarity :Negative,
@@ -606,7 +606,7 @@
                  }
                 {:label "beja_H-VPrefNegCVCImprtv"
                  :note "rootClass CVC is sometimes also noted as rootClass CC"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :bis,
                           :person :Person2,
@@ -621,7 +621,7 @@
                  }
                 {:label "beja_H-VPrefNegCVCOpt"
                  :note "rootClass CVC is sometimes also noted as rootClass CC"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :bis,
                           :polarity :Negative,
@@ -640,7 +640,7 @@
                  }
                 {:label "beja_H-VPrefNegCVCPres"
                  :note "rootClass CVC is sometimes also noted as rootClass CC"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Prefix,
                           :lexeme :bis,
                           :polarity :Negative,
@@ -658,7 +658,7 @@
                          [:Plural :Person3 :Common "k-iì-bis-`na"]]
                  }
                 {:label "beja_H-VSuffAffAor"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :polarity :Affirmative,
@@ -675,7 +675,7 @@
                          [:Plural :Person3 :Common "tam-iìn"]]
                  }
                 {:label "beja_H-VSuffAffPerm"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :polarity :Affirmative,
@@ -692,7 +692,7 @@
                          [:Plural :Person3 :Common "tam-iìn"]]
                  }
                 {:label "beja_H-VSuffAffImprtv"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :person :Person2,
@@ -705,7 +705,7 @@
                          [:Plural :Common "tam-aa-`na"]]
                  }
                 {:label "beja_H-VSuffAffOpt"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :polarity :Affirmative,
@@ -722,7 +722,7 @@
                          [:Plural :Person3 :Common "bá-tam-iìn"]]
                  }
                 {:label "beja_H-VSuffAffPast"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :polarity :Affirmative,
@@ -739,7 +739,7 @@
                          [:Plural :Person3 :Common "tam-yaàn"]]
                  }
                 {:label "beja_H-VSuffAffPres"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :polarity :Affirmative,
@@ -756,7 +756,7 @@
                          [:Plural :Person3 :Common "tam-eén"]]
                  }
                 {:label "beja_H-VSuffNegImprtv"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :person :Person2,
@@ -769,7 +769,7 @@
                          [:Plural :Common "b-àa-tam-aa-`na"]]
                  }
                 {:label "beja_H-VSuffNegOpt"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :polarity :Negative,
@@ -786,7 +786,7 @@
                          [:Plural :Person3 :Common "b-ii-tam-ay-`na"]]
                  }
                 {:label "beja_H-VSuffNegPres"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :polarity :Negative,
@@ -1238,7 +1238,7 @@
                          [:Suffix :tam :Present "Suff: -ée \"(while) eating\"" "tam-ée"]]
                  }
                 {:label "beja_H-VImperativeRootClassExx"
-                 :common {:vmorphclass :FinitePartial
+                 :common {:vmorphClass :FinitePartial
                           :gender :Masc,
                           :pos :Verb,
                           :person :Person2,
