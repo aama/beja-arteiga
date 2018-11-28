@@ -6,117 +6,119 @@
  :datasourceNotes "Where  there  are  terminological  differences between Hudson and Appleyard we generally follow Appleyard. Note that Hudson uses the terms 'Preterite' and 'Past' respectively for what are here termed, following Appleyard, 'Past' and 'Aorist'. The 'Permissive' tam category forms the base of the 'Optative', with prefix 'bá-' (var. 'baà') using the modal stem class, which differs from the Aorist only for CCY verbs. Hudson also has tam categories 'Volitive' (Permissive with additional suffix -ay) and 'Negative Volitive' (= Negative Optative ['Bound Negative'] + ay)."
  :geodemoURL "http://www.ethnologue.com/language/bej"
  :geodemoTXT "Beja is a closely related group of language varieties and dialects spoken in the Red Sea coastal and hill regions in Sudan, Eritrea, and Egypt by more than a million individuals. The variety documented here is that of the Arteiga tribe in the vicinity of Port Sudan and Suakin, Sudan. This variety was studied by Richard Hudson (see especially Hudson 1976), and the data has been made conveniently available in a survey article by David Appleyard (Appleyard, 2007a)."
-:schemata {:lexeme [:AUXILIARY  :COPULA :ab :ad :adum :as :baaba :bdn :bikkaar :bis :bít :dbl :dgy :dif :dif2 :dir :dlb :dmy :doob :dírim :eegrim :fid :fif :fnk :frk :fry :gaw :gid :ginuuf :gnf :gwa :hamas :hamasee :hby :heelay :hmy :hug :huus :ibaab :kaam :kadaw :khn :kileew :kitaab :ktb :ktm :kwa :kwbs :liw :miitaat :min :mkr :mry :msw :nde :niy :nuun :oos :raat :ragad :reeh :rgg :rib :rih :rkwy :rsd :sa :san :sar :sbb :sfy :sgwd :sgy :sik :skt :suum :swy :tam :tib :yaas :yak],
- :case [:Ablative :Equative :Locative :Nom_obj :Object :Possessive :Subject],
- :conjClass [:Enclitic :Prefix :Suffix],
- :defClass [:DefClass1 :DefClass2 :DefClass3],
- :deixis [:Far :Near],
- :derivedStem [:B :BIntensive :M :MIntensive :R :S :SIntensive :SMIntensive :SS :T :TIntensive],
- :gender [:Common :Fem :Masc],
- :langVar [:Arteiga :Bishari :Hadendowa],
- :nmorphClass [:PLMARK :POSTPOSITION],
- :number [:Plural :Singular :_NA],
- :participle [:Conjunctive :Future :NA :Negative :Past :Present],
- :person [:Person1 :Person2 :Person3],
- :pluralClass [:Pl_A :Pl_B :Pl_C],
- :polarity [:Affirmative :Negative],
- :pos [:Noun :Pronoun :Verb],
- :postpositionClass [:Pp_A :Pp_B],
- :proClass [:DefMarker :Demonstrative :Independent :PossObj :ProComp],
- :rootClass [:CCC :CCY :CVC :Invar],
- :tam [:Aorist :Future :Imperative :Jussive :NA :Optative :Past :Permissive :Present],
- :tamStemClass [:AoristClass :ModClass :NegClass :PartClass :PastClass :PresClass :PresSgClass],
- :vmorphClass [:Affix_SubjMark :Finite :FinitePartial :NonFin_Participles :Stem_DervSem :Stem_DervTense :Stem_Tam]
- } :pclass {:pngClass [:person :number :gender],
+ :schemata {:case [:Ablative  :Equative :Locative :Nom_obj :Object :Possessive :Subject],
+            :conjClass [:Enclitic :Prefix :Suffix],
+            :defClass [:DefClass1 :DefClass2 :DefClass3],
+            :deixis [:Far :Near],
+            :derivedStem [:B :BIntensive :M :MIntensive :R :S :SIntensive :SMIntensive :SS :T :TIntensive],
+            :gender [:Common :Fem :Masc],
+            :langVar [:Arteiga :Bishari :Hadendowa],
+            :nmorphClass [:PLMARK :POSTPOSITION],
+            :number [:Plural :Singular :_NA],
+            :participle [:Conjunctive :Future :NA :Negative :Past :Present],
+            :person [:Person1 :Person2 :Person3],
+            :pluralClass [:Pl_A :Pl_B :Pl_C],
+            :pmorphClass [:ProMorph],
+            :polarity [:Affirmative :Negative],
+            :pos [:Noun :Pronoun :Verb],
+            :postpositionClass [:Pp_A :Pp_B],
+            :proClass [:DefMarker :Demonstrative :Independent :PossObj :ProComp],
+            :rootClass [:CCC :CCY :CVC :Invar],
+            :tam [:Aorist :Future :Imperative :Jussive :NA :Optative :Past :Permissive :Present],
+            :tamStemClass [:AoristClass :ModClass :NegClass :PartClass :PastClass :PresClass :PresSgClass],
+            :vmorphClass [:Affix_SubjMark :Finite :FinitePartial :NonFin_Participles :Stem_DervSem :Stem_DervTense :Stem_Tam]
+            }
+ :pclass {:pngClass [:person :number :gender],
           :synsemClass [:case :defClass :deixis :derivedStem :derivedStemAug :participle :polarity :pos :proClass :tam],
           :inflClass [:conjClass :pluralClass :postpositionClass :rootClass],
           :otherClass []}
  :lexemes {
-           :sgy {:conjClass :Prefix, :derivedStem :S, :derivedStemAug :Simple, :rootClass :CCY, :lemma "-š-šagw-", :gloss "make ... do wrong"},
-           :reeh {:conjClass :Suffix, :derivedStem :M, :derivedStemAug :Simple, :lemma "reeh-am-", :gloss "rest oneself - be made at ease"},
-           :kitaab {:pluralClass :Pl_B, :token-plural "kitàb", :gloss "[x]", :lemma "kitaàb", :pos :Noun},
-           :baaba {:pluralClass :Pl_C, :token-plural "baabà", :gloss "[x]", :lemma "baabà", :pos :Noun},
-           :miitaat {:pluralClass :Pl_B, :token-plural "miitàt", :gloss "[x]", :lemma "miitaàt", :pos :Noun},
-           :fry {:conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CCY, :lemma "firiì-a", :gloss "give birth"},
-           :mkr {:conjClass :Prefix, :derivedStem :R, :derivedStemAug :Simple, :rootClass :CCC, :lemma "-mkar-", :gloss "take advice"},
-           :rsd {:conjClass :Prefix, :derivedStem :S, :derivedStemAug :Simple, :rootClass :CCC, :lemma "-š-rašid-", :gloss "cause to tend cattle "},
-           :hmy {:conjClass :Prefix, :derivedStem :R, :derivedStemAug :Simple, :rootClass :CCY, :lemma "-hme-", :gloss "cover oneself "},
-           :dbl {:conjClass :Prefix, :gloss "collect, gather", :pos :Verb, :rootClass :CCC, :lemma "dbl"},
-           :swy {:gloss "[x]", :lemma "[y]"},
-           :gid {:conjClass :Prefix, :derivedStem :SMIntensive, :rootClass :CVC, :lemma "-moo-gaad-", :gloss "throw at one another"},
-           :msw {:conjClass :Prefix, :derivedStem :SIntensive, :rootClass :CCC, :lemma "-s-maasiw-", :gloss "let ... hear"},
-           :hamas {:gloss "[x]", :lemma "[y]"},
-           :rih {:conjClass :Suffix, :derivedStem :B, :derivedStemAug :Simple, :lemma "rih-àa", :gloss "see"},
-           :adum {:conjClass :Suffix, :derivedStem :SMIntensive, :lemma "?adum-sam-", :gloss "speak with one another"},
-           :gaw {:pluralClass :Pl_A, :token-plural "gawà", :gloss "[x]", :lemma "gàw", :pos :Noun},
-           :ginuuf {:pluralClass :Pl_B, :token-plural "ginúf", :gloss "[x]", :lemma "ginuúf", :pos :Noun},
-           :suum {:conjClass :Suffix, :derivedStem :B, :derivedStemAug :Simple, :lemma "šuum-àa", :gloss "enter"},
-           :dmy {:conjClass :Prefix, :derivedStem :S, :derivedStemAug :Simple, :rootClass :CCY, :lemma "-š-dam-", :gloss "make ... stink "},
-           :hug {:conjClass :Suffix, :derivedStem :M, :derivedStemAug :Simple, :lemma "hug-am-", :gloss "be ground"},
-           :oos {:conjClass :Suffix, :derivedStem :S, :derivedStemAug :Simple, :lemma "?ooš-iš-", :gloss "make ... urinate"},
-           :gnf {:gloss "[x]", :lemma "[y]"},
-           :bis {:conjClass :Prefix, :gloss "bury", :pos :Verb, :rootClass :CVC},
-           :rib {:conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CVC, :lemma "rib-", :gloss "refuse"},
-           :bikkaar {:pluralClass :Pl_B, :token-plural "bikkàr", :gloss "[x]", :lemma "bikkàar", :pos :Noun},
-           :dir {:conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CVC, :lemma "dir-à", :gloss "kill"},
-           :san {:pluralClass :Pl_A, :token-plural "sanà", :gloss "[x]", :lemma "sàn", :pos :Noun},
-           :tib {:conjClass :Prefix, :derivedStem :SMIntensive, :rootClass :CVC, :lemma "-moo-taab-", :gloss "help to fill"},
-           :ibaab {:conjClass :Suffix, :derivedStem :S, :derivedStemAug :Simple, :lemma "?ibaab-s-", :gloss "send on a journey"},
-           :yak {:conjClass :Suffix, :derivedStem :SMIntensive, :lemma "yak-sam-", :gloss "rise up against one another"},
-           :bít {:pluralClass :Pl_A, :token-plural "bità", :gloss "[x]", :lemma "bít", :pos :Noun},
-           :hamasee {:conjClass :Suffix, :derivedStem :SS, :derivedStemAug :Simple, :lemma "hamašee-šiiš-", :gloss "cause to blind"},
-           :khn {:conjClass :Prefix, :derivedStem :TIntensive, :rootClass :CCC, :lemma "-t-kahaan-", :gloss "be loved "},
-           :rkwy {:conjClass :Prefix, :derivedStem :S, :derivedStemAug :Simple, :rootClass :CCY, :lemma "-s-rakw-", :gloss "make ... fear"},
-           :dlb {:gloss "buy", :lemma "dilib"},
-           :kwbs {:conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CCC, :lemma "kwibìs-", :gloss "hide"},
-           :sar {:conjClass :Prefix, :derivedStem :R, :derivedStemAug :Simple, :rootClass :CVC, :lemma "-sar-", :gloss "stay awake"},
-           :hby {:conjClass :Prefix, :derivedStem :TIntensive, :rootClass :CCY, :lemma "-t-habaay-", :gloss "be forbidden - prevented"},
-           :as {:gloss "[x]", :lemma "[y]"},
-           :dif {:conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CVC, :lemma "díf-a", :gloss "go away"},
-           :bdn {:conjClass :Prefix, :derivedStem :MIntensive, :rootClass :CCC, :lemma "-mee-bdaan-", :gloss "be forgotten"},
-           :huus {:pluralClass :Pl_A, :token-plural "huusà", :gloss "[x]", :lemma "huus", :pos :Noun},
-           :dgy {:conjClass :Prefix, :gloss "hear", :pos :Verb, :rootClass :CCY},
-           :fid {:conjClass :Suffix, :derivedStem :M, :derivedStemAug :Simple, :lemma "fid-am-", :gloss "blow one's nose"},
-           :dírim {:pluralClass :Pl_A, :token-plural "dirmà", :gloss "[x]", :lemma "dírim", :pos :Noun},
-           :cbl {:gloss "[x]", :lemma "[y]"},
-           :fif {:conjClass :Prefix, :derivedStem :R, :derivedStemAug :Simple, :rootClass :CVC, :lemma "-faf-", :gloss "boil over"},
-           :ky {:conjClass :Suffix, :gloss "be Auxiliary", :pos :Verb},
-           :nde {:pluralClass :Pl_C, :token-plural "nde", :gloss "[x]", :lemma "[n]dé", :pos :Noun},
-           :sik {:conjClass :Prefix, :derivedStem :TIntensive, :rootClass :CVC, :lemma "-too-šaak-", :gloss "be hunted"},
-           :eegrim {:conjClass :Suffix, :derivedStem :M, :derivedStemAug :Simple, :lemma "?eegrim-am-", :gloss "turn grey"},
-           :kaam {:pluralClass :Pl_B, :token-plural "kàm", :gloss "[x]", :lemma "kaàm", :pos :Noun},
-           :kwibis {:conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CCC, :lemma "kwbs-a", :gloss "hide - cover"},
-           :sfy {:conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CCY, :lemma "šifiì-", :gloss "drink milk"},
-           :dif2 {:conjClass :Prefix, :derivedStem :TIntensive, :rootClass :CVC, :lemma "-too-daaf-", :gloss "be dyed, tanned (see fn. 29) "},
-           :heelay {:pluralClass :Pl_A, :token-plural "heelayà", :gloss "[x]", :lemma "heèlay", :pos :Noun},
-           :skt {:conjClass :Prefix, :derivedStem :R, :derivedStemAug :Simple, :rootClass :CCC, :lemma "-skat-", :gloss "choke oneself"},
-           :ragad {:pluralClass :Pl_A, :token-plural "ragadà ", :gloss "[x]", :lemma "ragàd", :pos :Noun},
-           :dif1 {:conjClass :Prefix, :derivedStem :SS, :derivedStemAug :Simple, :rootClass :CVC, :lemma "-šišoo-dif-", :gloss "see that s.o. has s.th. dyed "},
-           :yaas {:pluralClass :Pl_B, :token-plural "yàs", :gloss "[x]", :lemma "yàas", :pos :Noun},
-           :kadaw {:conjClass :Suffix, :derivedStem :S, :derivedStemAug :Simple, :lemma "kadaw-š-", :gloss "jingle - rattle (tr.)"},
-           :doob {:conjClass :Suffix, :derivedStem :B, :derivedStemAug :Simple, :lemma "doob-àa", :gloss "marry"},
-           :niy {:conjClass :Prefix, :derivedStem :MIntensive, :rootClass :CVC, :lemma "-mee-niiy-", :gloss "be milked"},
-           :rgg {:conjClass :Prefix, :derivedStem :SMIntensive, :rootClass :CCC, :lemma "-m-ragaag-", :gloss "help to drive away "},
-           :min {:conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CVC, :lemma "min-à", :gloss "shave"},
-           :frk {:gloss "[x]", :lemma "[y]"},
-           :sgwd {:conjClass :Prefix, :derivedStem :TIntensive, :rootClass :CCC, :lemma "-š-t-agwaad-", :gloss "be washed-3"},
-           :ab {:pluralClass :Pl_A, :token-plural "aba", :gloss "[x]", :lemma "?àb", :pos :Noun},
-           :nuun {:conjClass :Suffix, :derivedStem :B, :derivedStemAug :Simple, :lemma "nuun-àa", :gloss "hand over"},
-           :tam {:conjClass :Suffix, :gloss "eat", :pos :Verb},
-           :sa {:conjClass :Prefix, :derivedStem :R, :derivedStemAug :Simple, :rootClass :CVC, :lemma "-sa?-", :gloss "sit (down) "},
-           :mry {:conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CCY, :lemma "miriì-a", :gloss "find"},
-           :fnk {:conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CCC, :lemma "finìk-a", :gloss "bite"},
-           :ad {:gloss "tremble", :lemma "?ad"},
-           :kileew {:conjClass :Suffix, :derivedStem :B, :derivedStemAug :Simple, :lemma "kileew-àa", :gloss "guard - take prisoner"},
-           :kwa {:pluralClass :Pl_C, :token-plural "kwà", :gloss "[x]", :lemma "kwà", :pos :Noun},
-           :raat {:conjClass :Suffix, :derivedStem :B, :derivedStemAug :Simple, :lemma "raat-àa", :gloss "ask"},
-           :gwa {:conjClass :Suffix, :derivedStem :B, :derivedStemAug :Simple, :lemma "gwa?-àa", :gloss "drink"},
-           :AUXILIARY {:gloss "Auxiliary", :lemma "Auxiliary"},
-           :COPULA {:gloss "Copula", :lemma "Copula"},
-           :liw {:gloss "burn", :pos :Verb, :rootClass :CVC},
-           :sbb {:conjClass :Prefix, :derivedStem :R, :derivedStemAug :Simple, :rootClass :CCC, :lemma "-šbab-", :gloss "look at oneself"},
-           :ktm {:conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CCC, :lemma "kitìm-a", :gloss "arrive"},
-           :ktb {:conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CCC, :lemma "kitb-a", :gloss "write"}}
+:AUXILIARY   {:pos :Verb, :lemma "Auxiliary", :gloss "Auxiliary", },
+:COPULA   {:pos :Verb, :lemma "Copula", :gloss "Copula", },
+:ab   {:pos :Noun, :lemma "?àb", :gloss "[x]", :pluralClass :Pl_A, :pluralform "aba"},
+:ad   {:pos :Verb, :lemma "?ad", :gloss "tremble", },
+:adum   {:pos :Verb, :lemma "?adum-sam-", :gloss "speak with one another", :conjClass :Suffix, :derivedStem :SMIntensive},
+:as   {:pos :Verb, :lemma "[y]", :gloss "[x]", },
+:baaba   {:pos :Noun, :lemma "baabà", :gloss "[x]", :pluralClass :Pl_C, :pluralform "baabà"},
+:bdn   {:pos :Verb, :lemma "-mee-bdaan-", :gloss "be forgotten", :conjClass :Prefix, :derivedStem :MIntensive, :rootClass :CCC},
+:bikkaar   {:pos :Noun, :lemma "bikkàar", :gloss "[x]", :pluralClass :Pl_B, :pluralform "bikkàr"},
+:bis   {:pos :Verb, :lemma "[y]", :gloss "bury", :conjClass :Prefix, :rootClass :CVC},
+:bít   {:pos :Noun, :lemma "bít", :gloss "[x]", :pluralClass :Pl_A, :pluralform "bità"},
+:cbl   {:pos :Verb, :lemma "[y]", :gloss "[x]", },
+:dbl   {:pos :Verb, :lemma "dbl", :gloss "collect, gather", :conjClass :Prefix, :rootClass :CCC},
+:dgy   {:pos :Verb, :lemma "[y]", :gloss "hear", :conjClass :Prefix, :rootClass :CCY},
+:dif   {:pos :Verb, :lemma "díf-a", :gloss "go away", :conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CVC},
+:dif1   {:pos :Verb, :lemma "-šišoo-dif-", :gloss "see that s.o. has s.th. dyed ", :conjClass :Prefix, :derivedStem :SS, :derivedStemAug :Simple, :rootClass :CVC},
+:dif2   {:pos :Verb, :lemma "-too-daaf-", :gloss "be dyed, tanned (see fn. 29) ", :conjClass :Prefix, :derivedStem :TIntensive, :rootClass :CVC},
+:dir   {:pos :Verb, :lemma "dir-à", :gloss "kill", :conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CVC},
+:dlb   {:pos :Verb, :lemma "dilib", :gloss "buy", },
+:dmy   {:pos :Verb, :lemma "-š-dam-", :gloss "make ... stink ", :conjClass :Prefix, :derivedStem :S, :derivedStemAug :Simple, :rootClass :CCY},
+:doob   {:pos :Verb, :lemma "doob-àa", :gloss "marry", :conjClass :Suffix, :derivedStem :B, :derivedStemAug :Simple},
+:dírim   {:pos :Noun, :lemma "dírim", :gloss "[x]", :pluralClass :Pl_A, :pluralform "dirmà"},
+:eegrim   {:pos :Verb, :lemma "?eegrim-am-", :gloss "turn grey", :conjClass :Suffix, :derivedStem :M, :derivedStemAug :Simple},
+:fid   {:pos :Verb, :lemma "fid-am-", :gloss "blow one's nose", :conjClass :Suffix, :derivedStem :M, :derivedStemAug :Simple},
+:fif   {:pos :Verb, :lemma "-faf-", :gloss "boil over", :conjClass :Prefix, :derivedStem :R, :derivedStemAug :Simple, :rootClass :CVC},
+:fnk   {:pos :Verb, :lemma "finìk-a", :gloss "bite", :conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CCC},
+:frk   {:pos :Verb, :lemma "[y]", :gloss "[x]", },
+:fry   {:pos :Verb, :lemma "firiì-a", :gloss "give birth", :conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CCY},
+:gaw   {:pos :Noun, :lemma "gàw", :gloss "[x]", :pluralClass :Pl_A, :pluralform "gawà"},
+:gid   {:pos :Verb, :lemma "-moo-gaad-", :gloss "throw at one another", :conjClass :Prefix, :derivedStem :SMIntensive, :rootClass :CVC},
+:ginuuf   {:pos :Noun, :lemma "ginuúf", :gloss "[x]", :pluralClass :Pl_B, :pluralform "ginúf"},
+:gnf   {:pos :Verb, :lemma "[y]", :gloss "[x]", },
+:gwa   {:pos :Verb, :lemma "gwa?-àa", :gloss "drink", :conjClass :Suffix, :derivedStem :B, :derivedStemAug :Simple},
+:hamas   {:pos :Verb, :lemma "[y]", :gloss "[x]", },
+:hamasee   {:pos :Verb, :lemma "hamašee-šiiš-", :gloss "cause to blind", :conjClass :Suffix, :derivedStem :SS, :derivedStemAug :Simple},
+:hby   {:pos :Verb, :lemma "-t-habaay-", :gloss "be forbidden - prevented", :conjClass :Prefix, :derivedStem :TIntensive, :rootClass :CCY},
+:heelay   {:pos :Noun, :lemma "heèlay", :gloss "[x]", :pluralClass :Pl_A, :pluralform "heelayà"},
+:hmy   {:pos :Verb, :lemma "-hme-", :gloss "cover oneself ", :conjClass :Prefix, :derivedStem :R, :derivedStemAug :Simple, :rootClass :CCY},
+:hug   {:pos :Verb, :lemma "hug-am-", :gloss "be ground", :conjClass :Suffix, :derivedStem :M, :derivedStemAug :Simple},
+:huus   {:pos :Noun, :lemma "huus", :gloss "[x]", :pluralClass :Pl_A, :pluralform "huusà"},
+:ibaab   {:pos :Verb, :lemma "?ibaab-s-", :gloss "send on a journey", :conjClass :Suffix, :derivedStem :S, :derivedStemAug :Simple},
+:kaam   {:pos :Noun, :lemma "kaàm", :gloss "[x]", :pluralClass :Pl_B, :pluralform "kàm"},
+:kadaw   {:pos :Verb, :lemma "kadaw-š-", :gloss "jingle - rattle (tr.)", :conjClass :Suffix, :derivedStem :S, :derivedStemAug :Simple},
+:khn   {:pos :Verb, :lemma "-t-kahaan-", :gloss "be loved ", :conjClass :Prefix, :derivedStem :TIntensive, :rootClass :CCC},
+:kileew   {:pos :Verb, :lemma "kileew-àa", :gloss "guard - take prisoner", :conjClass :Suffix, :derivedStem :B, :derivedStemAug :Simple},
+:kitaab   {:pos :Noun, :lemma "kitaàb", :gloss "[x]", :pluralClass :Pl_B, :pluralform "kitàb"},
+:ktb   {:pos :Verb, :lemma "kitb-a", :gloss "write", :conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CCC},
+:ktm   {:pos :Verb, :lemma "kitìm-a", :gloss "arrive", :conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CCC},
+:kwa   {:pos :Noun, :lemma "kwà", :gloss "[x]", :pluralClass :Pl_C, :pluralform "kwà"},
+:kwbs   {:pos :Verb, :lemma "kwibìs-", :gloss "hide", :conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CCC},
+:kwibis   {:pos :Verb, :lemma "kwbs-a", :gloss "hide - cover", :conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CCC},
+:ky   {:pos :Verb, :lemma "[y]", :gloss "be Auxiliary", :conjClass :Suffix},
+:liw   {:pos :Verb, :lemma "[y]", :gloss "burn", :rootClass :CVC},
+:miitaat   {:pos :Noun, :lemma "miitaàt", :gloss "[x]", :pluralClass :Pl_B, :pluralform "miitàt"},
+:min   {:pos :Verb, :lemma "min-à", :gloss "shave", :conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CVC},
+:mkr   {:pos :Verb, :lemma "-mkar-", :gloss "take advice", :conjClass :Prefix, :derivedStem :R, :derivedStemAug :Simple, :rootClass :CCC},
+:mry   {:pos :Verb, :lemma "miriì-a", :gloss "find", :conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CCY},
+:msw   {:pos :Verb, :lemma "-s-maasiw-", :gloss "let ... hear", :conjClass :Prefix, :derivedStem :SIntensive, :rootClass :CCC},
+:nde   {:pos :Noun, :lemma "[n]dé", :gloss "[x]", :pluralClass :Pl_C, :pluralform "nde"},
+:niy   {:pos :Verb, :lemma "-mee-niiy-", :gloss "be milked", :conjClass :Prefix, :derivedStem :MIntensive, :rootClass :CVC},
+:nuun   {:pos :Verb, :lemma "nuun-àa", :gloss "hand over", :conjClass :Suffix, :derivedStem :B, :derivedStemAug :Simple},
+:oos   {:pos :Verb, :lemma "?ooš-iš-", :gloss "make ... urinate", :conjClass :Suffix, :derivedStem :S, :derivedStemAug :Simple},
+:raat   {:pos :Verb, :lemma "raat-àa", :gloss "ask", :conjClass :Suffix, :derivedStem :B, :derivedStemAug :Simple},
+:ragad   {:pos :Noun, :lemma "ragàd", :gloss "[x]", :pluralClass :Pl_A, :pluralform "ragadà "},
+:reeh   {:pos :Verb, :lemma "reeh-am-", :gloss "rest oneself - be made at ease", :conjClass :Suffix, :derivedStem :M, :derivedStemAug :Simple},
+:rgg   {:pos :Verb, :lemma "-m-ragaag-", :gloss "help to drive away ", :conjClass :Prefix, :derivedStem :SMIntensive, :rootClass :CCC},
+:rib   {:pos :Verb, :lemma "rib-", :gloss "refuse", :conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CVC},
+:rih   {:pos :Verb, :lemma "rih-àa", :gloss "see", :conjClass :Suffix, :derivedStem :B, :derivedStemAug :Simple},
+:rkwy   {:pos :Verb, :lemma "-s-rakw-", :gloss "make ... fear", :conjClass :Prefix, :derivedStem :S, :derivedStemAug :Simple, :rootClass :CCY},
+:rsd   {:pos :Verb, :lemma "-š-rašid-", :gloss "cause to tend cattle ", :conjClass :Prefix, :derivedStem :S, :derivedStemAug :Simple, :rootClass :CCC},
+:sa   {:pos :Verb, :lemma "-sa?-", :gloss "sit (down) ", :conjClass :Prefix, :derivedStem :R, :derivedStemAug :Simple, :rootClass :CVC},
+:san   {:pos :Noun, :lemma "sàn", :gloss "[x]", :pluralClass :Pl_A, :pluralform "sanà"},
+:sar   {:pos :Verb, :lemma "-sar-", :gloss "stay awake", :conjClass :Prefix, :derivedStem :R, :derivedStemAug :Simple, :rootClass :CVC},
+:sbb   {:pos :Verb, :lemma "-šbab-", :gloss "look at oneself", :conjClass :Prefix, :derivedStem :R, :derivedStemAug :Simple, :rootClass :CCC},
+:sfy   {:pos :Verb, :lemma "šifiì-", :gloss "drink milk", :conjClass :Prefix, :derivedStem :B, :derivedStemAug :Simple, :rootClass :CCY},
+:sgwd   {:pos :Verb, :lemma "-š-t-agwaad-", :gloss "be washed-3", :conjClass :Prefix, :derivedStem :TIntensive, :rootClass :CCC},
+:sgy   {:pos :Verb, :lemma "-š-šagw-", :gloss "make ... do wrong", :conjClass :Prefix, :derivedStem :S, :rootClass :CCY},
+:sik   {:pos :Verb, :lemma "-too-šaak-", :gloss "be hunted", :conjClass :Prefix, :derivedStem :TIntensive, :rootClass :CVC},
+:skt   {:pos :Verb, :lemma "-skat-", :gloss "choke oneself", :conjClass :Prefix, :derivedStem :R, :derivedStemAug :Simple, :rootClass :CCC},
+:suum   {:pos :Verb, :lemma "šuum-àa", :gloss "enter", :conjClass :Suffix, :derivedStem :B, :derivedStemAug :Simple},
+:swy   {:pos :Verb, :lemma "[y]", :gloss "[x]", },
+:tam   {:pos :Verb, :lemma "[y]", :gloss "eat", :conjClass :Suffix},
+:tib   {:pos :Verb, :lemma "-moo-taab-", :gloss "help to fill", :conjClass :Prefix, :derivedStem :SMIntensive, :rootClass :CVC},
+:yaas   {:pos :Noun, :lemma "yàas", :gloss "[x]", :pluralClass :Pl_B, :pluralform "yàs"},
+:yak   {:pos :Verb, :lemma "yak-sam-", :gloss "rise up against one another", :conjClass :Suffix, :derivedStem :SMIntensive},
+}
  :termclusters [
                 {:label "beja_H-VCopula"
                  :common {:vmorphClass :Finite
@@ -206,7 +208,7 @@
                          [:Plural :Person3 :Common "?-iidbil-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCCPerm"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dbl,
                           :polarity :Affirmative,
@@ -224,7 +226,7 @@
                          [:Plural :Person3 :Common "?-iidbil-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCCImprtv"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dbl,
                           :person :Person2,
@@ -238,7 +240,7 @@
                          [:Plural :Common "dibil-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCCOpt"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dbl,
                           :polarity :Affirmative,
@@ -256,7 +258,7 @@
                          [:Plural :Person3 :Common "bá-?-iidbil-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCCPast"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dbl,
                           :polarity :Affirmative,
@@ -274,7 +276,7 @@
                          [:Plural :Person3 :Common "?i-dbil-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCCPres"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dbl,
                           :polarity :Affirmative,
@@ -292,7 +294,7 @@
                          [:Plural :Person3 :Common "?-eedbil-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCYAor"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dgy,
                           :polarity :Affirmative,
@@ -310,7 +312,7 @@
                          [:Plural :Person3 :Common "?i-diig-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCYPerm"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dgy,
                           :polarity :Affirmative,
@@ -328,7 +330,7 @@
                          [:Plural :Person3 :Common "?i-daag-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCYImprtv"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dgy,
                           :person :Person2,
@@ -342,7 +344,7 @@
                          [:Plural :Common "digii-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCYOpt"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dgy,
                           :polarity :Affirmative,
@@ -360,7 +362,7 @@
                          [:Plural :Person3 :Common "bá-?i-daag-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCYPast"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dgy,
                           :polarity :Affirmative,
@@ -378,7 +380,7 @@
                          [:Plural :Person3 :Common "?i-dgiil-`na"]]
                  }
                 {:label "beja_H-VPrefAffCCYPres"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dgy,
                           :polarity :Affirmative,
@@ -397,7 +399,7 @@
                  }
                 {:label "beja_H-VPrefAffCVCAor"
                  :note "rootClass CVC is sometimes also noted as rootClass CC"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :bis,
                           :polarity :Affirmative,
@@ -416,7 +418,7 @@
                  }
                 {:label "beja_H-VPrefAffCVCPerm"
                  :note "rootClass CVC is sometimes also noted as rootClass CC"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :bis,
                           :polarity :Affirmative,
@@ -435,7 +437,7 @@
                  }
                 {:label "beja_H-VPrefAffCVCImprtv"
                  :note "rootClass CVC is sometimes also noted as rootClass CC"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :bis,
                           :person :Person2,
@@ -450,7 +452,7 @@
                  }
                 {:label "beja_H-VPrefAffCVCOpt"
                  :note "rootClass CVC is sometimes also noted as rootClass CC"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :bis,
                           :polarity :Affirmative,
@@ -469,7 +471,7 @@
                  }
                 {:label "beja_H-VPrefAffCVCPast"
                  :note "rootClass CVC is sometimes also noted as rootClass CC"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :bis,
                           :polarity :Affirmative,
@@ -488,7 +490,7 @@
                  }
                 {:label "beja_H-VPrefAffCVCPres"
                  :note "rootClass CVC is sometimes also noted as rootClass CC"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :bis,
                           :polarity :Affirmative,
@@ -506,7 +508,7 @@
                          [:Plural :Person3 :Common "?-eebis-`na"]]
                  }
                 {:label "beja_H-VPrefNegCCCImprtv"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dbl,
                           :person :Person2,
@@ -520,7 +522,7 @@
                          [:Plural :Common "b-àa-dabiil-`na"]]
                  }
                 {:label "beja_H-VPrefNegCCCOpt"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dbl,
                           :polarity :Negative,
@@ -538,7 +540,7 @@
                          [:Plural :Person3 :Common "b-ii-dabiil-`na"]]
                  }
                 {:label "beja_H-VPrefNegCCCPres"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dbl,
                           :polarity :Negative,
@@ -556,7 +558,7 @@
                          [:Plural :Person3 :Common "k-iì-dbil-`na"]]
                  }
                 {:label "beja_H-VPrefNegCCYImprtv"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dgy,
                           :person :Person2,
@@ -570,7 +572,7 @@
                          [:Plural :Common "b-àa-dagii-`na"]]
                  }
                 {:label "beja_H-VPrefNegCCYOpt"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dgy,
                           :polarity :Negative,
@@ -588,7 +590,7 @@
                          [:Plural :Person3 :Common "b-ii-dagii-`na"]]
                  }
                 {:label "beja_H-VPrefNegCCYPres"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :dgy,
                           :polarity :Negative,
@@ -607,7 +609,7 @@
                  }
                 {:label "beja_H-VPrefNegCVCImprtv"
                  :note "rootClass CVC is sometimes also noted as rootClass CC"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :bis,
                           :person :Person2,
@@ -622,7 +624,7 @@
                  }
                 {:label "beja_H-VPrefNegCVCOpt"
                  :note "rootClass CVC is sometimes also noted as rootClass CC"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :bis,
                           :polarity :Negative,
@@ -641,7 +643,7 @@
                  }
                 {:label "beja_H-VPrefNegCVCPres"
                  :note "rootClass CVC is sometimes also noted as rootClass CC"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Prefix,
                           :lexeme :bis,
                           :polarity :Negative,
@@ -659,7 +661,7 @@
                          [:Plural :Person3 :Common "k-iì-bis-`na"]]
                  }
                 {:label "beja_H-VSuffAffAor"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :polarity :Affirmative,
@@ -676,7 +678,7 @@
                          [:Plural :Person3 :Common "tam-iìn"]]
                  }
                 {:label "beja_H-VSuffAffPerm"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :polarity :Affirmative,
@@ -693,7 +695,7 @@
                          [:Plural :Person3 :Common "tam-iìn"]]
                  }
                 {:label "beja_H-VSuffAffImprtv"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :person :Person2,
@@ -706,7 +708,7 @@
                          [:Plural :Common "tam-aa-`na"]]
                  }
                 {:label "beja_H-VSuffAffOpt"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :polarity :Affirmative,
@@ -723,7 +725,7 @@
                          [:Plural :Person3 :Common "bá-tam-iìn"]]
                  }
                 {:label "beja_H-VSuffAffPast"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :polarity :Affirmative,
@@ -740,7 +742,7 @@
                          [:Plural :Person3 :Common "tam-yaàn"]]
                  }
                 {:label "beja_H-VSuffAffPres"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :polarity :Affirmative,
@@ -757,7 +759,7 @@
                          [:Plural :Person3 :Common "tam-eén"]]
                  }
                 {:label "beja_H-VSuffNegImprtv"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :person :Person2,
@@ -770,7 +772,7 @@
                          [:Plural :Common "b-àa-tam-aa-`na"]]
                  }
                 {:label "beja_H-VSuffNegOpt"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :polarity :Negative,
@@ -787,7 +789,7 @@
                          [:Plural :Person3 :Common "b-ii-tam-ay-`na"]]
                  }
                 {:label "beja_H-VSuffNegPres"
-                 :common {:vmorphClass :FinitePartial
+                 :common {:vmorphClass :Finite
                           :conjClass :Suffix,
                           :lexeme :tam,
                           :polarity :Negative,
