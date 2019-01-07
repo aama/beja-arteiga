@@ -1170,7 +1170,8 @@
                          [:Subject :Near :Plural :Fem "taàn"]]
                  }
                 {:label "beja_H-PInd"
-                 :common {:pos :Pronoun, :pmorphClass :ProMorph,
+                 :common {:pos :Pronoun, 
+                          :pmorphClass :ProMorph,
                           :proClass :Independent}
                  :terms [[:case :number :person :gender :token],
                          [:Object :Singular :Person1 :Common "?aneè-b"],
